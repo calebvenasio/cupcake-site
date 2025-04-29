@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+
+body {
+    font-family: sans-serif;
+    margin:0;
+    background-color: black;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    
+}
+
+
+#logo {
+    width: 10rem;   
+    min-width: 20px;  
+    max-width: 80px; 
+}
+
+
+/* hero */
+
+#hero {
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Side-by-side layout */
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/cupcake-hero.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: left center;
+    color: white;
+    padding: 20px;
+}
+
+.disease #hero {
+    background-image: url(../images/disease-hero.png);
+}
+
+.about #hero {
+    background-image: url(../images/about-hero.jpg);
+}
+
+#hero .text-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    text-align: right;
+}
+
+#hero h2 {
+    font-size: 5rem;
+    margin: 0;
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* navigation */
+
+#primary-nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+    
+#primary-nav a {
+    text-decoration: none;
+    color: red; 
+    font-size: 1rem;
+    }
+    
+/* cupcake list */
+
+#cupcakes-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: rgb(249, 246, 246);
+    padding: 0;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.card h3, .card .price {
+    color: black;
+}
+
+/* disease page */
+
+#ingredients-method {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.big-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: rgb(227, 219, 219);
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.big-card .left,
+.big-card .right {
+    flex: 1 1 45%;
+}
+
+.big-card h3 {
+    font-size: 2rem;
+    color: red;
+    text-align:left;
+    margin-bottom: 1rem;
+}
+
+.ingredients, .method {
+    color: black;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.ingredients li, .method li {
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+/* About page */
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(227, 219, 219);
+    box-sizing: border-box;
+    margin-top: 50px; /* Add this to create space between the hero image and the content */
+}
+
+#about .big-card {
+    background-color: rgb(227, 219, 219);
+    padding: 2rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#about h3 {
+    font-size: 2rem;
+    color: red;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#about p strong {
+    font-weight: bold;
+}
+
+
+@media screen and (width>1000px) {
+    
+    header,main,footer {
+        max-width: 1000px;
+        margin-inline:auto;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    }
+}
+
+/* Footer Styles */
+
+#footer {
+    background-color: black;
+    padding: 30px 20px;
+}
+
+#footer-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-nav a {
+    color: red;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#footer-nav p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-top: 15px;
+}
+  
